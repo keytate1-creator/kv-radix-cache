@@ -16,7 +16,9 @@ from radix_cache.cache import KVRadixCache
 def create_parser() -> argparse.ArgumentParser:
     parser = argparse.ArgumentParser(
         prog="kv-radix-cache",
-        description="High-Performance Radix Prefix Trie & KV Cache Eviction Engine for LLM Serving.",
+        description=(
+            "High-Performance Radix Prefix Trie & KV Cache Eviction Engine for LLM Serving."
+        ),
     )
     subparsers = parser.add_subparsers(dest="command", required=True)
 
